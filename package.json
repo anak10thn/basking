@@ -1,0 +1,24 @@
+{
+  "name": "basking",
+  "version": "0.1.0",
+  "description": "Fast NodeJS HTTP Parser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anak10thn/basking.git"
+  },
+  "keywords": [
+    "http",
+    "parser",
+    "pico"
+  ],
+  "author": "anak10thn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anak10thn/basking/issues"
+  },
+  "homepage": "https://github.com/anak10thn/basking#readme"
+}
