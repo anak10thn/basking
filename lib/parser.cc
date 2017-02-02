@@ -163,8 +163,7 @@ NAN_METHOD(phr_parse_http_request) {
   tmp[7] = 48 + ((minor_version > 1 || minor_version < 0 ) ? 0 : minor_version);
   envref->Set(server_protocol_key, Nan::New<String>(tmp, sizeof("HTTP/1.0") - 1).ToLocalChecked());
 
-  /* PATH_INFO QUERY_STRING */
-  path_len = find_ch(path, path_len, '#'); /* strip off all text after # after storing request_uri */
+  path_len = find_ch(path, path_len, '#');
   question_at = find_ch(path, path_len, '?');
   if ( store_path_info(envref, path, question_at) < 0 ) {
     ret = -1;
